@@ -604,25 +604,21 @@
 	<script src="js/magnific-popup-options.js"></script>
 
 	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+	<script src="js/luxon.min.js"></script>
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+    // Countdown
+    const ceremonyDt = luxon.DateTime.fromObject({ year: 2023, month: 2, day: 19, hour: 15, minute: 30 }, { zone: 'America/Los_Angeles' }).toLocal();
 
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
+	simplyCountdown('.simply-countdown-one', {
+        year: ceremonyDt.year,
+        month: ceremonyDt.month,
+        day: ceremonyDt.day,
+        hours: ceremonyDt.hour,
+        minutes: ceremonyDt.minute,
         enableUtc: false
     });
 </script>
