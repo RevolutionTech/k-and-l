@@ -1837,3 +1837,34 @@ form {
     opacity: 0;
   }
 }
+
+.fh5co-cover-bottom {
+  background-position: bottom;
+}
+
+.kl-story {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  img {
+    text-align: center;
+  }
+  img {
+    border-radius: 50px;
+  }
+  img.rect {
+    border-radius: unset;
+  }
+  p {
+    margin-top: 1em;
+    margin-bottom: 3em;
+    text-align: left;
+  }
+
+  .fh5co-heading {
+    margin-bottom: unset;
+  }
+}

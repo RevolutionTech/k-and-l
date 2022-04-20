@@ -1856,3 +1856,31 @@ form label {
 .js .animate-box {
   opacity: 0;
 }
+
+.fh5co-cover-bottom {
+  background-position: bottom;
+}
+
+.kl-story h1,
+.kl-story h2,
+.kl-story h3,
+.kl-story h4,
+.kl-story h5,
+.kl-story h6,
+.kl-story img {
+  text-align: center;
+}
+.kl-story img {
+  border-radius: 50px;
+}
+.kl-story img.rect {
+  border-radius: unset;
+}
+.kl-story p {
+  margin-top: 1em;
+  margin-bottom: 3em;
+  text-align: left;
+}
+.kl-story .fh5co-heading {
+  margin-bottom: unset;
+}
