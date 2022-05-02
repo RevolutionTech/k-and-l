@@ -1884,3 +1884,32 @@ form label {
 .kl-story .fh5co-heading {
   margin-bottom: unset;
 }
+
+#accordion {
+  margin: 1em 0;
+  text-align: left;
+}
+#accordion .card {
+  padding: 8px 12px;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+}
+#accordion .card button.btn {
+  padding: 0;
+  font-size: 18px;
+}
+#accordion .card button.btn.btn-link:hover, #accordion .card button.btn.btn-link:focus {
+  text-decoration: none;
+}
+#accordion .card button.btn > .icon > .icon-chevron-thin-down {
+  display: inline-block;
+  -moz-transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+#accordion .card button.btn.collapsed > .icon > .icon-chevron-thin-down {
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
