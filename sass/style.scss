@@ -1858,10 +1858,16 @@ form {
   img.rect {
     border-radius: unset;
   }
-  p {
-    margin-top: 1em;
+  p,
+  ul {
     margin-bottom: 3em;
     text-align: left;
+  }
+  p {
+    margin-top: 1em;
+  }
+  ul {
+    padding-left: 30px;
   }
 
   .fh5co-heading {
