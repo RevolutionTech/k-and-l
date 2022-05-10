@@ -411,11 +411,11 @@ figure {
   }
   .display-t,
   .display-tc {
-    height: 900px;
+    height: 852px;
     display: table;
     width: 100%;
     @media screen and (max-width: $screen-sm) {
-      height: 600px;
+      height: 552px;
     }
   }
 
@@ -426,11 +426,11 @@ figure {
     }
     .display-t,
     .display-tc {
-      height: 600px;
+      height: 552px;
       display: table;
       width: 100%;
       @media screen and (max-width: $screen-sm) {
-        height: 400px;
+        height: 352px;
       }
     }
   }
@@ -1840,6 +1840,32 @@ form {
 
 .fh5co-cover-bottom {
   background-position: bottom;
+}
+
+.photo-credit-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .photo-credit {
+    display: block;
+    overflow: hidden;
+    max-width: 29px;
+    white-space: nowrap;
+    padding: 2px 8px;
+    color: white;
+    background: rgba(75, 75, 75, 0.3);
+    border-radius: 12px;
+    transition: max-width 1s ease-in-out;
+
+    &:hover {
+      max-width: 100%;
+    }
+
+    a {
+      color: white;
+    }
+  }
 }
 
 .kl-story {
