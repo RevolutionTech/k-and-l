@@ -1842,6 +1842,17 @@ form {
   background-position: bottom;
 }
 
+.photo-credit-overlay {
+  .photo-credit-row {
+    .photo-credit {
+      position: relative;
+      bottom: 50px;
+      right: 50px;
+      max-width: 26px;
+    }
+  }
+}
+
 .photo-credit-row {
   display: flex;
   justify-content: flex-end;
