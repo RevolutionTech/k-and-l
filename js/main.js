@@ -137,13 +137,7 @@
     $(".js-gotop").on("click", function (event) {
       event.preventDefault();
 
-      $("html, body").animate(
-        {
-          scrollTop: $("html").offset().top,
-        },
-        500,
-        "easeInOutExpo"
-      );
+      $("html, body").scrollTop($("html").offset().top);
 
       return false;
     });

@@ -99,6 +99,10 @@ $form-group-margin-bottom: 30px !default;
 *
 * ======================================================= */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $font-primary;
   font-weight: 400;
@@ -757,6 +761,7 @@ figure {
         }
         h2 {
           color: $brand-white;
+          text-shadow: 5px 5px 10px black;
           margin-bottom: 0;
           @media screen and (max-width: $screen-sm) {
             font-size: 20px;
@@ -766,6 +771,15 @@ figure {
     }
     &.one-third {
       width: 32.3%;
+      @media screen and (max-width: $screen-sm) {
+        width: 49%;
+      }
+      @media screen and (max-width: $screen-xs) {
+        width: 100%;
+      }
+    }
+    &.one-quarter {
+      width: 24%;
       @media screen and (max-width: $screen-sm) {
         width: 49%;
       }
@@ -1905,6 +1919,10 @@ form {
   }
   ul {
     padding-left: 30px;
+  }
+
+  #fh5co-gallery-list {
+    margin-bottom: 3em;
   }
 
   .fh5co-heading {

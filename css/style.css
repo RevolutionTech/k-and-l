@@ -11,6 +11,10 @@
 * 	Template Style 
 *
 * ======================================================= */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
@@ -728,6 +732,7 @@ figure {
 }
 #fh5co-gallery-list li a .case-studies-summary h2 {
   color: #fff;
+  text-shadow: 5px 5px 10px black;
   margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
@@ -745,6 +750,19 @@ figure {
 }
 @media screen and (max-width: 480px) {
   #fh5co-gallery-list li.one-third {
+    width: 100%;
+  }
+}
+#fh5co-gallery-list li.one-quarter {
+  width: 24%;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-gallery-list li.one-quarter {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #fh5co-gallery-list li.one-quarter {
     width: 100%;
   }
 }
@@ -1916,6 +1934,9 @@ form label {
 }
 .kl-story ul {
   padding-left: 30px;
+}
+.kl-story #fh5co-gallery-list {
+  margin-bottom: 3em;
 }
 .kl-story .fh5co-heading {
   margin-bottom: unset;
