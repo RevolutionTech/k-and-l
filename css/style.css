@@ -1098,8 +1098,8 @@ form label {
   color: #f14e95;
   font-size: 30px;
 }
-.couple-half .groom,
-.couple-half .bride {
+.couple-half .bride,
+.couple-half .groom {
   float: left;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1108,8 +1108,8 @@ form label {
   width: 150px;
   height: 150px;
 }
-.couple-half .groom img,
-.couple-half .bride img {
+.couple-half .bride img,
+.couple-half .groom img {
   width: 150px;
   height: 150px;
   -webkit-border-radius: 50%;
@@ -1118,45 +1118,45 @@ form label {
   border-radius: 50%;
 }
 @media screen and (max-width: 480px) {
-  .couple-half .groom,
-.couple-half .bride {
+  .couple-half .bride,
+.couple-half .groom {
     width: 100%;
     height: 140px;
   }
-  .couple-half .groom img,
-.couple-half .bride img {
+  .couple-half .bride img,
+.couple-half .groom img {
     width: 120px;
     height: 120px;
     margin: 0 auto;
   }
 }
-.couple-half .groom {
+.couple-half .bride {
   float: right;
   margin-right: 5px;
 }
-.couple-half .bride {
+.couple-half .groom {
   float: left;
   margin-left: 5px;
 }
-.couple-half .desc-groom {
+.couple-half .desc-bride {
   padding-right: 180px;
   text-align: right;
 }
-.couple-half .desc-bride {
+.couple-half .desc-groom {
   padding-left: 180px;
   text-align: left;
 }
 @media screen and (max-width: 480px) {
-  .couple-half .groom,
-.couple-half .bride {
+  .couple-half .bride,
+.couple-half .groom {
     margin-left: 0;
     margin-right: 0;
   }
-  .couple-half .desc-groom {
+  .couple-half .desc-bride {
     padding-right: 0;
     text-align: center;
   }
-  .couple-half .desc-bride {
+  .couple-half .desc-groom {
     padding-left: 0;
     text-align: center;
   }
