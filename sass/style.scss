@@ -1101,6 +1101,12 @@ form {
     float: left;
     margin-left: 5px;
   }
+  .desc-bride,
+  .desc-groom {
+    .desc-item {
+      display: inline-block;
+    }
+  }
   .desc-bride {
     padding-right: 180px;
     text-align: right;
@@ -1115,13 +1121,15 @@ form {
       margin-left: 0;
       margin-right: 0;
     }
+    .desc-bride,
+    .desc-groom {
+      text-align: center;
+    }
     .desc-bride {
       padding-right: 0;
-      text-align: center;
     }
     .desc-groom {
       padding-left: 0;
-      text-align: center;
     }
   }
 }

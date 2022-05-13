@@ -1134,6 +1134,10 @@ form label {
   float: left;
   margin-left: 5px;
 }
+.couple-half .desc-bride .desc-item,
+.couple-half .desc-groom .desc-item {
+  display: inline-block;
+}
 .couple-half .desc-bride {
   padding-right: 180px;
   text-align: right;
@@ -1148,13 +1152,15 @@ form label {
     margin-left: 0;
     margin-right: 0;
   }
+  .couple-half .desc-bride,
+.couple-half .desc-groom {
+    text-align: center;
+  }
   .couple-half .desc-bride {
     padding-right: 0;
-    text-align: center;
   }
   .couple-half .desc-groom {
     padding-left: 0;
-    text-align: center;
   }
 }
 
