@@ -732,7 +732,7 @@ figure {
 }
 #fh5co-gallery-list li a .case-studies-summary h2 {
   color: #fff;
-  text-shadow: 5px 5px 10px black;
+  text-shadow: 5px 5px 20px black;
   margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
