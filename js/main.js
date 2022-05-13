@@ -137,7 +137,14 @@
     $(".js-gotop").on("click", function (event) {
       event.preventDefault();
 
-      $("html, body").scrollTop($("html").offset().top);
+      var page = $("html, body");
+      var topOfPage = $("html").offset().top;
+
+      if (getComputedStyle($("html")[0]).scrollBehavior === "smooth") {
+        page.scrollTop(topOfPage);
+      } else {
+        page.animate({ scrollTop: topOfPage }, 500, "easeInOutExpo");
+      }
 
       return false;
     });
