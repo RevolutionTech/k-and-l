@@ -364,14 +364,16 @@ figure {
 
 #fh5co-counter,
 #fh5co-event {
-  height: 850px;
+  padding-top: 7em;
+  padding-bottom: 3em;
+  clear: both;
   float: left;
 }
 #fh5co-counter .display-t,
 #fh5co-counter .display-tc,
 #fh5co-event .display-t,
 #fh5co-event .display-tc {
-  height: 700px;
+  padding-bottom: 20px;
   display: table;
   width: 100%;
 }
@@ -400,7 +402,6 @@ figure {
   #fh5co-counter,
 #fh5co-event {
     height: inherit;
-    padding: 7em 0;
   }
   #fh5co-counter .display-t,
 #fh5co-counter .display-tc,
@@ -409,10 +410,21 @@ figure {
     height: inherit;
   }
 }
+#fh5co-counter .events-wrap,
+#fh5co-event .events-wrap {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-counter .events-wrap,
+#fh5co-event .events-wrap {
+    flex-direction: column;
+  }
+}
 #fh5co-counter .event-wrap,
 #fh5co-event .event-wrap {
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(68, 68, 68, 0.5);
+  background: rgba(68, 68, 68, 0.75);
   padding: 30px;
   width: 100%;
   float: left;
@@ -1019,7 +1031,6 @@ form label {
 #fh5co-services,
 #fh5co-started,
 #fh5co-footer,
-#fh5co-event,
 #fh5co-couple-story,
 #fh5co-couple,
 #fh5co-gallery,
@@ -1032,7 +1043,6 @@ form label {
 #fh5co-services,
 #fh5co-started,
 #fh5co-footer,
-#fh5co-event,
 #fh5co-couple-story,
 #fh5co-couple,
 #fh5co-gallery,

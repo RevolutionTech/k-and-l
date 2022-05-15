@@ -438,11 +438,13 @@ figure {
 
 #fh5co-counter,
 #fh5co-event {
-  height: 850px;
+  padding-top: 7em;
+  padding-bottom: 3em;
+  clear: both;
   float: left;
   .display-t,
   .display-tc {
-    height: 700px;
+    padding-bottom: 20px;
     display: table;
     width: 100%;
   }
@@ -468,16 +470,22 @@ figure {
   }
   @media screen and (max-width: $screen-sm) {
     height: inherit;
-    padding: 7em 0;
     .display-t,
     .display-tc {
       height: inherit;
     }
   }
 
+  .events-wrap {
+    display: flex;
+    gap: 30px;
+    @media screen and (max-width: $screen-sm) {
+      flex-direction: column;
+    }
+  }
   .event-wrap {
-    border: 2px solid rgba($brand-white, 0.5);
-    background: rgba($brand-white, 0.1);
+    border: 2px solid rgba($brand-darker, 0.5);
+    background: rgba($brand-darker, 0.75);
     padding: 30px;
     width: 100%;
     float: left;
@@ -1016,7 +1024,6 @@ form {
 #fh5co-services,
 #fh5co-started,
 #fh5co-footer,
-#fh5co-event,
 #fh5co-couple-story,
 #fh5co-couple,
 #fh5co-gallery,
