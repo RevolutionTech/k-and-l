@@ -1938,11 +1938,11 @@ form label {
 }
 .kl-story p,
 .kl-story ul {
-  margin-bottom: 3em;
   text-align: left;
 }
 .kl-story p {
   margin-top: 1em;
+  margin-bottom: 3em;
 }
 .kl-story ul {
   padding-left: 30px;
