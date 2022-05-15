@@ -70,6 +70,9 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
+    <!-- Add to Calendar Button -->
+    <link rel="stylesheet" href="css/atcb.min.css" />
+
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -115,16 +118,28 @@
           <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center">
               <div class="display-t">
-                <div
-                  class="display-tc animate-box"
-                  data-animate-effect="fadeIn"
-                >
-                  <h1>Katrina &amp; Lucas</h1>
-                  <h2>We Are Getting Married</h2>
-                  <div class="simply-countdown simply-countdown-one"></div>
-                  <p>
-                    <a href="#" class="btn btn-default btn-sm">Save the date</a>
-                  </p>
+                <div class="display-tc" data-animate-effect="fadeIn">
+                  <div class="animate-box">
+                    <h1>Katrina &amp; Lucas</h1>
+                    <h2>We Are Getting Married</h2>
+                    <div class="simply-countdown simply-countdown-one"></div>
+                  </div>
+                  <!-- prettier-ignore -->
+                  <div class="atcb" style="display: none">
+                    {
+                      "name": "Katrina &amp; Lucas&apos;s Wedding &#x1F492; &#x1F495;",
+                      "description": "Details available on [url]https://katrinaand.lucasconnors.com/[/url].",
+                      "startDate": "2023-02-19",
+                      "endDate": "2023-02-19",
+                      "startTime": "15:00",
+                      "endTime": "21:00",
+                      "location": "Temescal Beach House, Temescal Regional Recreation Area, 6500 Broadway Terrace, Oakland, CA 94618, USA",
+                      "label": "Save the date",
+                      "options": ["Apple", "Google", "iCal", "Microsoft365", "MicrosoftTeams", "Outlook.com", "Yahoo"],
+                      "timeZone": "America/Los_Angeles",
+                      "iCalFileName": "Katrina-Lucas-Wedding"
+                    }
+                  </div>
                 </div>
               </div>
             </div>
@@ -876,6 +891,10 @@
     <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
     <script src="js/luxon.min.js"></script>
     <script src="js/simplyCountdown.js"></script>
+
+    <!-- Add to Calendar Button -->
+    <script src="js/atcb.min.js" defer></script>
+
     <!-- Main -->
     <script src="js/main.js"></script>
 

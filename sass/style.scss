@@ -1863,6 +1863,15 @@ form {
   }
 }
 
+.atcb_button {
+  color: $brand-primary;
+  font-family: $font-primary;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
 .fh5co-cover-bottom {
   background-position: bottom;
 }

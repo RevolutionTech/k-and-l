@@ -1887,6 +1887,15 @@ form label {
   opacity: 0;
 }
 
+.atcb_button {
+  color: #f14e95;
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
 .fh5co-cover-bottom {
   background-position: bottom;
 }
