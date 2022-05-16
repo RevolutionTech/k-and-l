@@ -1977,6 +1977,8 @@ form label {
 #accordion .card button.btn {
   padding: 0;
   font-size: 18px;
+  text-align: left;
+  white-space: normal;
 }
 #accordion .card button.btn.btn-link:hover, #accordion .card button.btn.btn-link:focus {
   text-decoration: none;
