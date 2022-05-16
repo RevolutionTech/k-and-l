@@ -1030,7 +1030,6 @@ form label {
 #fh5co-testimonial,
 #fh5co-services,
 #fh5co-started,
-#fh5co-footer,
 #fh5co-couple-story,
 #fh5co-couple,
 #fh5co-gallery,
@@ -1042,13 +1041,17 @@ form label {
   #fh5co-testimonial,
 #fh5co-services,
 #fh5co-started,
-#fh5co-footer,
 #fh5co-couple-story,
 #fh5co-couple,
 #fh5co-gallery,
 .fh5co-section {
     padding: 3em 0;
   }
+}
+
+#fh5co-footer {
+  padding-bottom: 3em;
+  clear: both;
 }
 
 .fh5co-section-gray {
