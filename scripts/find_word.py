@@ -3,7 +3,7 @@ import datetime
 import json
 import os
 
-MESSAGES_DIR = "messages"
+MESSAGES_DIR = os.path.join("scratch", "messages")
 
 def get_sorted_filenames():
     filenames = os.listdir(MESSAGES_DIR)
@@ -19,7 +19,7 @@ def import_messages():
 
     messages = []
     for filename in get_sorted_filenames():
-        with open(f"messages/{filename}", "r") as f:
+        with open(os.path.join(MESSAGES_DIR, filename), "r") as f:
             file_content = f.read()
             file_json = json.loads(file_content)
             messages += file_json["messages"]
