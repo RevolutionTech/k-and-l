@@ -116,7 +116,6 @@
                   <div class="animate-box">
                     <h1>Katrina &amp; Lucas</h1>
                     <h2>We Are Getting Married</h2>
-                    <div class="simply-countdown simply-countdown-one"></div>
                   </div>
                   <!-- prettier-ignore -->
                   <div class="atcb" style="display: none">
@@ -448,31 +447,10 @@
     <!-- Stellar -->
     <script src="js/jquery.stellar.min.js"></script>
 
-    <!-- Countdown -->
-    <script src="js/luxon.min.js"></script>
-    <script src="js/simplyCountdown.js"></script>
-
     <!-- Add to Calendar Button -->
     <script src="js/atcb.min.js" defer></script>
 
     <!-- Main -->
     <script src="js/main.js"></script>
-
-    <script>
-      // Countdown
-      const ceremonyDt = luxon.DateTime.fromObject(
-        { year: 2023, month: 2, day: 19, hour: 15, minute: 30 },
-        { zone: "America/Los_Angeles" }
-      ).toLocal();
-
-      simplyCountdown(".simply-countdown-one", {
-        year: ceremonyDt.year,
-        month: ceremonyDt.month,
-        day: ceremonyDt.day,
-        hours: ceremonyDt.hour,
-        minutes: ceremonyDt.minute,
-        enableUtc: false,
-      });
-    </script>
   </body>
 </html>
