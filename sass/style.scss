@@ -1867,14 +1867,6 @@ form {
   }
 }
 
-.atcb_button {
-  font-family: $font-primary;
-  font-size: 14px;
-  font-weight: 400;
-  border-radius: 30px;
-  text-transform: uppercase;
-}
-
 .fh5co-cover-bottom {
   background-position: bottom;
 }
@@ -1950,6 +1942,16 @@ form {
 
   .fh5co-heading {
     margin-bottom: unset;
+  }
+
+  .pswp-gallery {
+    margin-top: 1em;
+    margin-bottom: 3em;
+
+    img {
+      border-radius: unset;
+      vertical-align: initial;
+    }
   }
 }
 
