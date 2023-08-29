@@ -1,5 +1,8 @@
 name: Deploy
 on: workflow_dispatch
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
   deploy:
@@ -7,11 +10,10 @@ jobs:
     environment: prod
     steps:
       - uses: actions/checkout@v2
-      - uses: jakejarvis/s3-sync-action@v0.5.1
+      - uses: aws-actions/configure-aws-credentials@v3.0.1
         with:
-          args: --acl public-read --follow-symlinks --delete --cache-control no-cache
-        env:
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          SOURCE_DIR: public
+          role-to-assume: ${{ vars.IAM_ROLE_ARN }}
+          aws-region: us-east-1
+      - name: Upload static content
+        run: aws s3 sync public s3://${{ vars.S3_BUCKET }}/ --no-progress --follow-symlinks --delete --cache-control no-cache
+        shell: bash
